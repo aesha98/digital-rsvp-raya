@@ -40,7 +40,7 @@ export default function Homepage()
           priority
         />
 
-			<h2 className="mt-10 text-sm text-center">We invite you to our open house in occasion in celebrating raya</h2>
+			<h2 className="mt-10 text-sm text-center font-semibold">We invite you to our open house in occasion in celebrating raya</h2>
 			<br/>
       </div>
 
@@ -49,9 +49,9 @@ export default function Homepage()
 		<div className='mt-2 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
 
 
-			<h2 className="mb-3 text-2xl text-center font-semibold">SUNDAY, 28 APRIL 2024</h2>
-			<p className='mb-3 text-3xl text-center font-semibold'>12-5PM</p>
-			<p className="mb-3 text-2lg text-center font-semibold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+			<h2 className="mb-3 text-xl text-center font-bold">SUNDAY, 28 APRIL 2024</h2>
+			<p className='mb-3 text-md text-center font-bold'>12-5PM</p>
+			<p className="mb-3 text-md text-center font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
 			<br/>
 
 			<a href='#' className='group border-gray-100 rounded-lg border border-transparent px-5 py-4 transition-colors
