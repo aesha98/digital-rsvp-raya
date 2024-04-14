@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { roboto_mono } from '../ui/font';
 
 export default function Homepage()
 {
 	return(
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
 			<div className="z-10 max-w-5xl w-full items-center  justify-between  text-sm lg:flex">
-				<p className='fixed left-0 top-0 flex w-full justify-center bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30'>OPENHOUSE INVITATION</p>
+				<p className={'font-sans fixed left-0 top-0 flex w-full justify-center bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30'}>OPENHOUSE INVITATION</p>
 
 				<div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
 
@@ -40,7 +41,7 @@ export default function Homepage()
           priority
         />
 
-			<h2 className="mt-10 text-sm text-center font-semibold">We invite you to our open house in occasion in celebrating raya</h2>
+			<h2 className="font-sans mt-10 text-sm text-center font-semibold">We invite you to our open house in occasion in celebrating raya</h2>
 			<br/>
       </div>
 
@@ -49,9 +50,9 @@ export default function Homepage()
 		<div className='mt-2 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
 
 
-			<h2 className="mb-3 text-xl text-center font-bold">SUNDAY, 28 APRIL 2024</h2>
-			<p className='mb-3 text-md text-center font-bold'>12-5PM</p>
-			<p className="mb-3 text-md text-center font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+			<h2 className="font-sans mb-3 text-xl text-center font-bold">SUNDAY, 28 APRIL 2024</h2>
+			<p className='font-sans mb-3 text-md text-center font-bold'>12-5PM</p>
+			<p className="font-sans mb-3 text-md text-center font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
 			<br/>
 
 			<a href='#' className='group border-gray-100 rounded-lg border border-transparent px-5 py-4 transition-colors
