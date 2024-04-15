@@ -1,4 +1,4 @@
-import { inter, roboto_mono } from "../app/ui/font";
+import { inter, garamond } from "../app/ui/font";
 import "./ui/globals.css";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ `${inter.variable} antialiased ${roboto_mono.variable} antialiased`}>{children}</body>
+      <body className={ `${inter.variable} antialiased ${garamond.variable} antialiased`}>{children}</body>
     </html>
   );
 }

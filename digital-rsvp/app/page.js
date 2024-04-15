@@ -6,7 +6,7 @@ export default function Home()
 	return(
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
 			<div className="z-10 max-w-5xl w-full items-center  justify-between  text-sm lg:flex">
-				<p className={'font-sans fixed left-0 top-0 flex w-full justify-center bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30'}>OPENHOUSE INVITATION</p>
+				<p className={'font-mono text-2xl fixed left-0 top-0 flex w-full font-italic justify-center bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30'}>YOU'RE INVITED</p>
 
 				<div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-teal-950 dark:via-teal-950 lg:static lg:h-auto lg:w-auto lg:bg-none">
 
@@ -47,13 +47,13 @@ export default function Home()
       </div>
 
 		
-		
-		<div className='mt-2 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
-
+		{/* Event Information */}
+		<div className='mt-10 mb-20 flex flex-col text-center lg:max-w-lg lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
 
 			<h2 className="font-sans mb-3 text-xl text-center font-bold">SUNDAY, 28 APRIL 2024</h2>
-			<p className='font-sans mb-3 text-md text-center font-bold'>12-5PM</p>
-			<p className="font-sans mb-3 text-md text-center font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+			<p className='font-sans mb-3 text-sm text-center font-bold'>12-5PM</p>
+			<p className="font-sans mb-3 text-sm text-center font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+			
 			<br/>
 
 			<a href='#' className='group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors

@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, EB_Garamond, Playfair_Display } from "next/font/google";
 
 // Primary Font
 export const inter = Inter({
@@ -8,8 +8,8 @@ export const inter = Inter({
 });
 
 // Secondary Font
-export const roboto_mono = Roboto_Mono({
-	subsets:['latin'],
+export const garamond = Playfair_Display({
+	subsets:['cyrillic'],
 	display:'swap',
 	variable:'--font-roboto-mon'
 })
