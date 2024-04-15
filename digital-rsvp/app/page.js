@@ -42,7 +42,7 @@ export default function Home()
           priority
         />
 
-			<h2 className="font-sans mt-10 text-sm text-center font-semibold">We invite you to our open house in occasion in celebrating raya</h2>
+			<h2 className="font-sans mt-10 text-sm text-center">We invite you to our open house in occasion in celebrating raya</h2>
 			<br/>
       </div>
 

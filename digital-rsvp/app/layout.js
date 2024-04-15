@@ -2,8 +2,8 @@ import { inter, roboto_mono } from "../app/ui/font";
 import "./ui/globals.css";
 
 export const metadata = {
-  title: "E-Invite Open House",
-  description: "Selamat Hari Raya",
+  title: "RSVP E-Invite Open House",
+  description: "Sunday, 28 April 2024 - Asrian Family",
 };
 
 export default function RootLayout({ children }) {
