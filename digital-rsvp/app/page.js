@@ -60,11 +60,9 @@ export default function Home()
 			
 			<br/>
 
-			<a href='#' className='group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
+			<a href='/Submit' className='group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
 			hover:border-gray-300
-			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30'
-			target='_blank'
-			rel='noopener noreferer'>RSVP NOW</a>
+			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30'>RSVP NOW</a>
 		</div>
 		</div>
 		</main>
