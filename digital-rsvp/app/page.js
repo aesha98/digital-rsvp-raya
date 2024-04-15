@@ -5,7 +5,7 @@ export default function Home()
 {
 	return(
 		<main className="relative flex flex-col bg-[url(/grid.svg)] p-10 [mask-image:linear-gradient(180deg, white,rgba(255,255,255,0))] items-center">
-			<div className='relative flex min-h-screen flex-col justify-evenly border overflow-hidden bg-teal-950 py-6 sm:py-12 p-10'>
+			<div className='relative flex min-h-screen flex-col justify-evenly border border-yellow-400 overflow-hidden bg-teal-950 py-6 sm:py-12 p-10'>
 			{/* <div className='absolute inset-0  bg-[url(/grid.svg)] bg-center [mask-image:linear-gradient(180deg, white,rgba(255,255,255,0))]'></div> */}
 			<div className="relative z-10 max-w-5xl w-full items-center justify-center  text-sm lg:flex">
 
