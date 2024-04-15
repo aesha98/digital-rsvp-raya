@@ -1,3 +1,4 @@
+// Guest table
 const guests = [
 	{
 		id : '3958dc9e-712f-4377-85e9-fec4b6a6442a',
@@ -20,13 +21,15 @@ const rsvp = [
 		guest_id : guests[0].id,
 		name:guests[0].name,
 		rsvp_status:'attending',
-		note :'See you!'
+		note :'See you!',
+		date : '2024-04-12'
 	},
 	{
 		guest_id : guests[1].id,
 		name:guests[1].name,
 		rsvp_status:'busy',
-		note :'See you!'
+		note :'See you!',
+		date: '2024-04-13'
 	},
 ];
 

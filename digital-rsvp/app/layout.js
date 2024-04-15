@@ -1,4 +1,4 @@
-import { inter, roboto_mono } from "@/app/ui/font";
+import { inter, roboto_mono } from "../app/ui/font";
 import "./ui/globals.css";
 
 export const metadata = {

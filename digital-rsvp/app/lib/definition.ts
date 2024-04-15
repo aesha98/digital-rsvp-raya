@@ -10,5 +10,6 @@ export type rsvp = {
 	guest_id : number,
 	name:string,
 	rsvp_status:'attending' | 'busy',
-	note :string
+	note :string,
+	date: string
 }

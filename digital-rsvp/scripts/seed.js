@@ -48,7 +48,8 @@ async function seedRsvp(client){
 		guest_id UUID NOT NULL,
 		name VARCHAR(255) NOT NULL,
 		rsvp_status VARCHAR(255) NOT NULL,
-		note VARCHAR(255) NOT NULL
+		note VARCHAR(255) NOT NULL,
+		date DATE NOT NULL
 	);
 	`;
 
@@ -58,8 +59,8 @@ async function seedRsvp(client){
     const insertedRsvp = await Promise.all(
       rsvp.map(
         (rsvp) => client.sql`
-        INSERT INTO rsvp (guest_id, name, rsvp_status, note)
-        VALUES (${rsvp.guest_id}, ${rsvp.name}, ${rsvp.rsvp_status}, ${rsvp.note})
+        INSERT INTO rsvp (guest_id, name, rsvp_status, note, date)
+        VALUES (${rsvp.guest_id}, ${rsvp.name}, ${rsvp.rsvp_status}, ${rsvp.note}, ${rsvp.date})
         ON CONFLICT (rsvp_id) DO NOTHING;
       `,
       ),
