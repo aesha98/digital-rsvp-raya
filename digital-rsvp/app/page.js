@@ -33,13 +33,14 @@ export default function Home()
 			</div>
 	
 	{/* Image Family */}
-			 <div className="relative m-4 flex flex-col place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-100 before:dark:opacity-10 after:dark:from-teal-950 after:dark:via-[#1e331f] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+			 <div className="relative m-2 flex flex-col place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-teal-200 after:via-teal-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-teal-100 before:dark:opacity-10 after:dark:from-teal-950 after:dark:via-[#1e331f] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] "
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] border rounded"
           src="/digital_rsvp_img.png"
           alt="Next.js Logo"
           width={500}
           height={400}
+		
           priority
         />
 
@@ -49,7 +50,7 @@ export default function Home()
 
 		
 		{/* Event Information */}
-		<div className='mt-10 mb-20 flex flex-col text-center lg:max-w-lg lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
+		<div className='mt-5 mb-20 flex flex-col text-center lg:max-w-lg lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center'>
 
 			<h2 className="font-sans mb-3 text-xl text-center font-bold">SUNDAY, 28 APRIL 2024</h2>
 			<p className='font-sans mb-3 text-sm text-center font-bold'>12-5PM</p>
