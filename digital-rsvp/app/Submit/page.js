@@ -25,6 +25,7 @@ export default function Submit_rsvp()
     event.preventDefault();
     // Submit form data
   };
+
 	return(
 		<main className="relative flex flex-col bg-[url(/grid.svg)] p-10 [mask-image:linear-gradient(180deg, white,rgba(255,255,255,0))] items-center">
 			<div className='relative flex min-h-screen flex-col border border-yellow-400 overflow-hidden bg-teal-950 py-6 sm:py-12 p-10'>
@@ -114,7 +115,7 @@ export default function Submit_rsvp()
 			{/* Submit Button */}     
 				<a href='/Submit' type='submit' className='w-full max-w-md group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
 			hover:border-gray-300
-			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30'>Submit</a>
+			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30 mt-10'>Submit</a>
 			</form>
 		</div>
 		</div>
