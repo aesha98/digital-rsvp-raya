@@ -8,7 +8,7 @@ export default function Home() {
         <div className="z-10 w-full text-center">
 
           <h1 className='text-2xl font-mono font-italic bg-gradient-to-b from-teal-950 to-transparent pb-6 pt-8 backdrop-blur-xl border-b border-yellow-400 dark:bg-teal-950/30 lg:rounded-xl lg:p-4'>
-            YOU'RE INVITED
+            YOU&apos;RE INVITED
           </h1>
 
           <div className="mt-10 mb-10 flex flex-col items-center justify-center lg:flex-row lg:justify-between">
@@ -24,8 +24,8 @@ export default function Home() {
               />
             </div>
             
-            <div>
-              <h2 className="mt-2 mb-10 text-sm">We invite you to our open house in occasion of celebrating Raya</h2>
+            <div className='mb-10 flex flex-col align-top justify-evenly'>
+              <h2 className=" mb-10 text-sm">We invite you to our open house in occasion of celebrating Raya</h2>
               <h2 className="font-sans mt-6 text-xl font-bold">SUNDAY, 28 APRIL 2024</h2>
               <p className='font-sans mt-3 text-md font-bold'>12-5PM</p>
               <p className="font-sans mt-3 text-md font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
