@@ -63,7 +63,7 @@ export default function Submit_rsvp()
           <form className="mt-10 w-full flex flex-col gap-6" >
             {/* Name Input */}
 			<div className='mt-2 flex flex-col left-0 align-baseline'>
-			<label className='text-sm font-medium text-gray-900 dark:text-gray-300  font-sans text-left mb-4'>Name</label>
+			<label className='text-sm font-medium text-gray-900 dark:text-gray-300  font-sans text-left mb-2'>Name</label>
             <input className="w-full max-w-md rounded-lg border px-5 py-2 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" placeholder="Name" required />
 			</div>
 
