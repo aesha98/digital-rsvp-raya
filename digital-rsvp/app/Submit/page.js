@@ -42,27 +42,11 @@ export default function Submit_rsvp()
     event.preventDefault();
 	setStatus('submitting');
 
-	 const formData = {
-    	name: guestName,
-    	rsvp_status: attendance,
-    // Add other fields as necessary
-  };
-
 	try {
-		//submit form data
-		const response = await fetch('/api/rsvp', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (!response.ok) throw new Error('Network response was not ok');
-
+	
     setStatus('success');
 	} catch (err) {
-		    console.error('There was a problem with your fetch operation:', error);
+		console.error('There was a problem with your fetch operation:', error);
 		setStatus('typing');
 		setError(err);
 	}
@@ -102,7 +86,7 @@ export default function Submit_rsvp()
 		<div className='w-full flex flex-col text-center lg:max-w-lg lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center align-top justify-start'>
 			{/* RSVP Form */}
 
-          <form className="mt-10 w-full flex flex-col gap-6" onSubmit={handleSubmit} action={createRSVP}>
+          <form className="mt-10 w-full flex flex-col gap-6" action={createRSVP}>
             {/* Name Input */}
 			<div className='mt-2 flex flex-col left-0 align-baseline'>
 			<label className='text-sm font-medium text-gray-900 dark:text-gray-300  font-sans text-left mb-2'>Name</label>
@@ -117,7 +101,7 @@ export default function Submit_rsvp()
 				<div className="flex items-center me-4">
 					
 					<input id="Accepted" name='rsvp_status' type="checkbox" value="Accepted" className="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked={attendance === 'Accepted'} onChange={handleAttendanceChange}/>
-					<label for="inline-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-sans">Yes, I will attend</label>
+					<label htmlFor="inline-checkbox" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-sans">Yes, I will attend</label>
 				</div>
 				<div className="flex items-center me-4">
 					<input id="Decline" name='rsvp_status' type="checkbox" value="Decline" className="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked={attendance === "Decline"} onChange={handleAttendanceChange}/>
@@ -155,7 +139,7 @@ export default function Submit_rsvp()
           
             
 			{/* Submit Button */}     
-				<button disabled={ (attendance !== 'Decline' && attendance !== 'Accepted') || status === 'submitting'} type='submit' className='w-full max-w-md group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
+				<button disabled={ (attendance !== 'Decline' && attendance !== 'Accepted') || status === 'submitting'} onSubmit={handleSubmit} type='submit' className='w-full max-w-md group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
 			hover:border-gray-300
 			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30 mt-4 disabled:opacity-20'>Submit</button>
 			</form>
