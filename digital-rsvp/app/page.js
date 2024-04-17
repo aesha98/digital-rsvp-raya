@@ -25,32 +25,34 @@ export default function Home() {
             </div>
             
             <div className='mb-10 flex flex-col align-top justify-evenly'>
-              <h2 className=" mb-10 text-sm">We invite you to our open house in occasion of celebrating Raya</h2>
-              <h2 className="font-mono mt-6 text-xl font-bold">SUNDAY, 28 APRIL 2024</h2>
-              <p className='font-mono mt-3 text-md font-bold'>12-5PM</p>
-              <p className="font-mono mt-3 text-md font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
-              <a href='/Submit' className='w-full max-w-md mt-6 inline-block rounded-lg border border-neutral-700 bg-yellow-600 px-5 py-4 font-sans transition-colors hover:border-gray-300 hover:bg-yellow-100 dark:hover:border-neutral-100 dark:hover:bg-yellow-600 dark:hover:bg-opacity-30'>
+              <h2 className=" mb-4 text-sm">We warmly invite you to join us at our Open House in celebration of Raya</h2>
+              <h2 className="text-sm italic">Sincerely,</h2>
+              <h2 className='mb-4 text-sm italic'>Shahida, Aesha, Eiman, Amer & Mukmin</h2>
+              <h2 className="z-10 font-sans mt-6 text-lg font-bold">SUNDAY, 28 APRIL 2024</h2>
+              <p className='z-10 font-sans mt-3 text-xl font-bold'>12-5PM</p>
+              <p className="z-10 font-sans mt-3 text-md font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+              <a href='/Submit' className='w-full max-w-md mt-10 inline-block rounded-lg border border-neutral-700 bg-yellow-600 px-5 py-4 font-sans transition-colors hover:border-gray-300 hover:bg-yellow-100 dark:hover:border-neutral-100 dark:hover:bg-yellow-600 dark:hover:bg-opacity-30'>
                 Reply RSVP
               </a>
             </div>
 
           </div>
 
-          <div className="fixed bottom-0 left-0 right-0 flex h-24 w-full items-end justify-center bg-gradient-to-t from-teal-800 via-teal-950 to-transparent dark:from-teal-950 dark:via-teal-950 lg:relative lg:h-auto lg:w-auto lg:bg-none">
+          <div className="z-20 fixed bottom-0 left-0 right-0 flex h-24 w-full items-end justify-center bg-gradient-to-t from-teal-800 via-teal-950 to-transparent dark:from-teal-950 dark:via-teal-950 lg:relative lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="flex items-center gap-2 p-8 lg:p-0"
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://github.com/aesha98"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Powered by{' '}
+              Made by{' '}
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
+                src="/icon.svg"
+                alt="Logo"
                 width={100}
                 height={20}
                 priority
-                className="dark:invert"
+                className=""
               />
             </a>
           </div>

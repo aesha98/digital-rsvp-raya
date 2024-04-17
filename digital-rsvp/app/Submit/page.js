@@ -64,16 +64,16 @@ export default function Submit_rsvp()
 
 				 <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://github.com/aesha98"
             target="_blank"
             rel="noopener noreferrer"
           >
 			{/* <a href="https://www.flaticon.com/free-icons/raya" title="raya icons">Raya icons created by LAB Design Studio - Flaticon</a> */}
-            By{" "}
+            Made By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
+              src="/icon.svg"
+              alt="Logo"
+              className=""
               width={100}
               height={20}
               priority

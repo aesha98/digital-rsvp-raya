@@ -22,7 +22,9 @@ export async function createRSVP(formData: FormData) {
     rsvp_status: formData.get('rsvp_status'),
   });
   // Test it out:
-    const date = new Date().toISOString().split('T')[0];
+    const time = Date.now();
+    const currentDate = new Date(time);
+    const date = currentDate.toISOString();
 
   console.log(name + rsvp_status);
 
@@ -35,7 +37,7 @@ export async function createRSVP(formData: FormData) {
   const guestId = guestResult.rows?.[0].id;
   
   await sql`
-  INSERT INTO rsvp (guest_id, rsvp_status, name, date)
+  INSERT INTO rsvp (guest_id, name, rsvp_status, date)
   VALUES (${guestId}, ${name}, ${rsvp_status}, ${date});
   `;
 
