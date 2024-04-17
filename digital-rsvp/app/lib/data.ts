@@ -20,6 +20,20 @@ async function fetchGuest() {
   }
 }
 
+/*Add new guest into the RSVP List*/
+async function AddGuestRSVP({name, rsvp_status}){
+try {
+  const data = await sql<guests>`
+  INSERT INTO 
+  `
+} catch (error) {
+   console.error('Database Error:', error);
+   throw new Error('Failed to add new guest into rsvp.');
+}
+
+}
+
+/*FETCH & UPDATE latest rsvp*/
 async function fetchLatestRSVP() {
 	 try {
     const data = await sql<rsvp>`

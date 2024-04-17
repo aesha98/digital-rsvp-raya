@@ -9,18 +9,15 @@ async function seedGuest(client){
 		const createTable = await client.sql`
 		CREATE TABLE IF NOT EXISTS guests (
 			id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-			name VARCHAR(255) NOT NULL,
-			email VARCHAR(255) NOT NULL,
-			phone VARCHAR(255) NOT NULL
-		);
-		`;
+			name VARCHAR(255) NOT NULL
+		);`;
 		console.log('Created Guest table');
 
 		const insertTable = await Promise.all(
 			guests.map(
 				(guests) => client.sql`
-				INSERT INTO guests (id, name, email, phone)
-				VALUES (${guests.id}, ${guests.name}, ${guests.email}, ${guests.phone})
+				INSERT INTO guests (id, name)
+				VALUES (${guests.id}, ${guests.name})
 				ON CONFLICT (id) DO NOTHING;
 				`,
 			),
@@ -48,9 +45,7 @@ async function seedRsvp(client){
 		guest_id UUID NOT NULL,
 		name VARCHAR(255) NOT NULL,
 		rsvp_status VARCHAR(255) NOT NULL,
-		note VARCHAR(255) NOT NULL,
-		date DATE NOT NULL
-	);
+		date DATE NOT NULL);
 	`;
 
 	 console.log(`Created "RSVP" table`);
@@ -59,8 +54,8 @@ async function seedRsvp(client){
     const insertedRsvp = await Promise.all(
       rsvp.map(
         (rsvp) => client.sql`
-        INSERT INTO rsvp (guest_id, name, rsvp_status, note, date)
-        VALUES (${rsvp.guest_id}, ${rsvp.name}, ${rsvp.rsvp_status}, ${rsvp.note}, ${rsvp.date})
+        INSERT INTO rsvp (guest_id, name, rsvp_status, date)
+        VALUES (${rsvp.guest_id}, ${rsvp.name}, ${rsvp.rsvp_status},${rsvp.date})
         ON CONFLICT (rsvp_id) DO NOTHING;
       `,
       ),
