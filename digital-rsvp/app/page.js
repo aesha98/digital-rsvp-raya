@@ -26,9 +26,9 @@ export default function Home() {
             
             <div className='mb-10 flex flex-col align-top justify-evenly'>
               <h2 className=" mb-10 text-sm">We invite you to our open house in occasion of celebrating Raya</h2>
-              <h2 className="font-sans mt-6 text-xl font-bold">SUNDAY, 28 APRIL 2024</h2>
-              <p className='font-sans mt-3 text-md font-bold'>12-5PM</p>
-              <p className="font-sans mt-3 text-md font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
+              <h2 className="font-mono mt-6 text-xl font-bold">SUNDAY, 28 APRIL 2024</h2>
+              <p className='font-mono mt-3 text-md font-bold'>12-5PM</p>
+              <p className="font-mono mt-3 text-md font-bold">No.8, Lorong Berlian 5, Taman Batu Tiga, 40150 Shah Alam, Selangor</p>
               <a href='/Submit' className='w-full max-w-md mt-6 inline-block rounded-lg border border-neutral-700 bg-yellow-600 px-5 py-4 font-sans transition-colors hover:border-gray-300 hover:bg-yellow-100 dark:hover:border-neutral-100 dark:hover:bg-yellow-600 dark:hover:bg-opacity-30'>
                 Reply RSVP
               </a>

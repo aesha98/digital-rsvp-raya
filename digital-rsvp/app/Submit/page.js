@@ -15,14 +15,17 @@ export default function Submit_rsvp()
 
 
 	if(status === 'success'){
-		return <h1>Thank you! We have received your RSVP</h1>
+		return (
+		<div className='mt-24 relative flex flex-col items-center'>
+			<h1 className='text-center text-lg align-middle font-sans'>Thank you!</h1>
+			<h1 className='font-sans text-md'>We have received your RSVP</h1>
+		</div>
+		);
 	}
 
 	const handleAttendanceChange = (event) =>{
 		setAttendance(event.target.value);
-		if(event.target.value === 'notAttend'){
-			setGuestCount(1);
-		}
+	
 	};
 
 	const handGuestCountChange = (event) =>{
@@ -132,7 +135,7 @@ export default function Submit_rsvp()
           
             
 			{/* Submit Button */}     
-				<button disabled={guestName.length === 0 || status === 'submitting'} onSubmit='/Submit' type='submit' className='w-full max-w-md group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
+				<button disabled={ (attendance !== 'notAttend' && attendance !== 'attend') || status === 'submitting'} onSubmit='/Submit' type='submit' className='w-full max-w-md group font-sans border-neutral-700 bg-yellow-600 rounded-lg border px-5 py-4 transition-colors
 			hover:border-gray-300
 			hover:bg-yellow-100 hover:dark:border-neutral-100 hover:dark:bg-yellow-600 hover:dark:bg-opacity-30 mt-4 disabled:opacity-20'>Submit</button>
 			</form>
